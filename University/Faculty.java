@@ -33,6 +33,6 @@ public class Faculty {
         this.facultyPosition=position;
     }
     public String toString(){
-        return "FACULTY :{ ID: "+getfacultyID()+",Name: "+getfacultyName()+",Position: "+getfacultyPosition();
+        return "FACULTY :{ ID: "+getfacultyID()+",Name: "+getfacultyName()+",Position: "+getfacultyPosition()+"}";
     }
 }

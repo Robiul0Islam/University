@@ -7,7 +7,7 @@ public class main {
         Scanner a=new Scanner(System.in);
         System.out.println("Enter Your Choice:");
         for(int i=0;;i++){
-            System.out.println("0:Exit\n1:Add Student.\n2:Add Faculty.\n3:Drop Student.\n4:Drop Faculty.\n5.All information.");
+            System.out.println("0:Exit\n1:Add Student.\n2:Add Faculty.\n3:Drop Student.\n4:Drop Faculty.\n5.All information.\n6.Search.");
             int x=a.nextInt();
             if(x==0){
                 break;
@@ -49,7 +49,15 @@ public class main {
                 System.out.println("-------------------------------");
                 System.out.println("Faculty Information:");
                 c.printFacultyInfo();
-                System.out.println("-------------------------------");
+                 System.out.println("-------------------------------");
+            }
+            else if(x==6){
+                System.out.println("Enter Student ID to search Student.");
+                int y=a.nextInt();
+                c.search(y);
+                
+                
+                
             }
         }
     }

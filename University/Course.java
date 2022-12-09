@@ -7,7 +7,7 @@ public class Course {
     private int numberOfStudent;
     private Student[] studentList=new Student[10];
     private Faculty faculty;
-    public String getfacultyName;
+    
 
     Course(){
 
@@ -18,7 +18,7 @@ public class Course {
         this.credit=credit;
     }
     public String toString(){
-        return "COURSE: { ID: "+courseID+",Title: "+courseTitle+",Credit: "+credit;
+        return "COURSE: { ID: "+courseID+",Title: "+courseTitle+",Credit: "+credit+"}";
     }
     public void addStudent(Student s){
         studentList[numberOfStudent++]=s;
@@ -35,6 +35,15 @@ public class Course {
             numberOfStudent--;
         }
      }   
+    }
+    public void search(int studentID){
+        for(int i=0;i<numberOfStudent;i++){
+            if(studentID==studentList[i].getstudentID()){
+                System.out.println("-----------------------------");
+                System.out.println(studentList[i].toString());
+                System.out.println("-----------------------------");
+            }
+        }
     }
     public void dropFaculty(){
         faculty=null;

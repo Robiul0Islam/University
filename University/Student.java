@@ -12,7 +12,7 @@ public class Student {
         this.studentName=studentName;
         this.CGPA=CGPA;
     }
-    public int getstudentID(){
+    public int getstudentID() {
         return studentID;
     }
     public String getstudentName(){
@@ -31,7 +31,7 @@ public class Student {
         this.CGPA=CGPA;
     }
     public String toString(){
-        return "STUDENT :{ ID: "+getstudentID()+",Name: "+getstudentName()+",CGPA: "+getCGPA();
+        return "STUDENT :{ ID: "+getstudentID()+",Name: "+getstudentName()+",CGPA: "+getCGPA()+"}";
     }
 }
 
